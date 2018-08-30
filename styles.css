@@ -41,7 +41,7 @@ canvas {
 	text-decoration:none;
 	text-shadow:0px 6px 0px #7a2a1d;
 }
-.myButton:hover {
+.btn:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b34332), color-stop(1, #a73f2d));
 	background:-moz-linear-gradient(top, #b34332 5%, #a73f2d 100%);
 	background:-webkit-linear-gradient(top, #b34332 5%, #a73f2d 100%);
@@ -51,7 +51,7 @@ canvas {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b34332', endColorstr='#a73f2d',GradientType=0);
 	background-color:#b34332;
 }
-.myButton:active {
+.btn:active {
 	position:relative;
 	top:1px;
 }
