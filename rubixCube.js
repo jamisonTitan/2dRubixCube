@@ -4,8 +4,14 @@ let selected = 0;
 
 const fillCube = function() {
   //fill sides[] with side objects
+  let temp;
   for(let i = 0; i <  6;i++) {
-    sides.push(new side(i));
+    temp = side(i);
+    sides.push(temp);
+    console.log(temp.sideNum);
+    console.log(temp.cubes[i]);
+    console.log(temp.cubes);
+    //console.log(temp.x);
   }
   //fill each side with one color
    sides.forEach(side => {
@@ -32,11 +38,32 @@ const mixCube = function() {
     funcs[Math.floor(Math.random() * 10)]();
   }
 }
-const side = function(sideNum){
-  this.sideNum = sideNum;
-  this.cubes = Array(9);
-  this.x = 0;
-  this.y = 0;
+
+const side = sidenum => {
+  const sideNum = sidenum;
+  const cubes = Array(9);
+  let x = 0;
+  let y = 0;
+  return {
+    get sideNum() {
+      return sideNum;
+    },
+    get cubes() {
+      return cubes;
+    },
+    get x() {
+      return x;
+    },
+    set x(temp) {
+      x = temp;
+    },
+    set y(temp) {
+      y = temp;
+    },
+    get y() {
+      return y;
+    },
+  };
 }
 
  const show = () => {

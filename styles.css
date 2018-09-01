@@ -10,6 +10,11 @@ canvas {
   border: 8px solid #241d13;
 }
 
+#button-holder {
+  display:flex;
+  justify-content: center;
+}
+
 #txt {
   display:flex;
   justify-content: left;
